@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
 """
-This sciript gathers the temperature and pressure data from bme680. That data is printed and saved to data.json
+This sciript gathers the temperature and pressure data from bme680. That data is printed and saved to data_bme680.json
 """
 
 import bme680
 import time
 import json
  
-print("""read-all.py - Displays temperature and pressure, saves to data.json.
+print("""bme680.py - Displays temperature and pressure, saves to data_bme680.json.
  
 Press Ctrl+C to exit!
  
@@ -47,7 +47,7 @@ try:
                 'time': time.time(),
             }
             all_data.append(data)
-            with open("data.json", "w") as json_file:
+            with open("data_bme680.json", "w") as json_file:
                 json.dump(all_data, json_file, indent=2)
             print(data)
         # 1 second delay
