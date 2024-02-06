@@ -12,7 +12,7 @@ from adafruit_lsm6ds.ism330dhcx import ISM330DHCX
 i2c = board.I2C()
 sensor = ISM330DHCX(i2c)
 
-print("""imu.py - Displays temperature and pressure, saves to data_imu.json.
+print("""imu.py - Displays acceleration and gyro data, saves to data_imu.json.
 
 Press Ctrl+C to exit!
 
