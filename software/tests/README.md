@@ -16,3 +16,8 @@ Gathers acceleration and gyro data from IMU. That data is printed and saved to d
 Modified ping example, based on sx1278-LoRa-RaspberryPi library.
 
 `Testing Status: Complete`
+
+# camera.py
+Saves images every 0.2s into `images/` folder.
+
+`Testing Status: Complete`
